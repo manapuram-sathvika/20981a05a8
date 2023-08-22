@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     async function fetchData() {
-      const urls = ['http://20.244.56.144/numbers/fibo', 'http://20.244.56.144/numbers/rand', 'http://20.244.56.144/numbers/odd']; // Replace with your list of URLs
+      const urls = ['http://20.244.56.144/numbers/fibo', 'http://20.244.56.144/numbers/rand', 'http://20.244.56.144/numbers/odd', 'http://20.244.56.144/numbers/primes'];
       const promises = urls.map(url =>
         fetch(url)
           .then(response => response.json())
